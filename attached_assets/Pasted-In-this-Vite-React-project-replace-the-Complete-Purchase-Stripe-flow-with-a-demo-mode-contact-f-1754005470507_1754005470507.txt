@@ -1,0 +1,33 @@
+In this Vite + React project, replace the “Complete Purchase” Stripe flow with a demo-mode contact flow. That is whenever users press the final “Complete Purchase” butoon.
+ Goal: When the user clicks Complete Purchase, show a friendly message and redirect them to a /contact page that lets them message me directly.
+Requirements:
+1. Add a boolean DEMO_MODE flag (default: true). When DEMO_MODE is true:
+    * The Complete Purchase button should not call Stripe.
+    * Instead, show a non-blocking toast/notice: “This is a demo site. If you’d like to book Muma’s ‘Maziness, contact me  and I’ll get you sizzling with the real thing👇”
+    * Then redirect to /contact.
+    * Make sure the contact page is consistent with the all the site’s pages, theme, fonts and animations.
+2. Create a Contact page at src/pages/Contact.jsx with:
+    * A short, friendly pitch and instructions.
+    * A prominent button: “Message Me” that opens a pre‑filled email to mumathedeveloper@gmail.com using mailto: with subject and body placeholders.
+3. Wire up routing with react-router-dom:
+    * Add a route for /contact.
+    * Ensure existing pages still load.
+4. Update the Complete Purchase button handler in the checkout/RSVP component (look for the Stripe payment intent call).
+    * If DEMO_MODE, do not call the server endpoint.
+    * Instead, navigate('/contact') after showing the notice.
+5. Keep the original Stripe code path for when DEMO_MODE === false.
+6. Add a small “Demo Mode” badge in the header/footer when DEMO_MODE is true.
+Files to touch (if they exist):
+* src/components/RSVPForm.jsx or whichever component contains the Complete Purchase button / Stripe handler
+* src/App.jsx (or router entry)
+* src/main.jsx (ensure BrowserRouter is applied)
+* Create src/pages/Contact.jsx
+Acceptance criteria:
+* Clicking Complete Purchase in demo mode shows the message and navigates to /contact.
+* /contact displays a contact CTA and mailto link to mumathedeveloper@gmail.com.
+* Setting DEMO_MODE = false restores the original Stripe flow.
+* No broken routes; FOUC minimized.
+Copy suggestions:
+* mailto subject: “Muma’s ‘Mazing BBQ — Booking/Inquiry”
+* mailto body (placeholder): “Hi Muma, I saw your demo and I’d like to…”
+Don’t remove existing styles. Use Tailwind utility classes already in the project.

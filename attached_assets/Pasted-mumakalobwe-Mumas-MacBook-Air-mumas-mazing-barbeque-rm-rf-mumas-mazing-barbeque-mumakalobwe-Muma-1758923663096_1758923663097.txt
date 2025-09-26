@@ -1,0 +1,41 @@
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % rm -rf mumas-mazing-barbeque/
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git add .
+git commit -m "Fix repository: add .gitignore and remove build artifacts"
+[main 97ee62b] Fix repository: add .gitignore and remove build artifacts
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 mumas-mazing-barbeque
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git push origin main
+To https://github.com/BlvckKryptonite/mumas-mazing-barbeque.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/BlvckKryptonite/mumas-mazing-barbeque.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 5 and 118 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git add .gitignore
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git reset --hard HEAD
+HEAD is now at 97ee62b Fix repository: add .gitignore and remove build artifacts
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % rm -rf mumas-mazing-barbeque/
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git add .
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git commit -m "Clean repository for Netlify deployment"
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 5 and 118 different commits each, respectively.
+
+nothing to commit, working tree clean
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % git push origin main
+To https://github.com/BlvckKryptonite/mumas-mazing-barbeque.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/BlvckKryptonite/mumas-mazing-barbeque.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+mumakalobwe@Mumas-MacBook-Air mumas-mazing-barbeque % 
