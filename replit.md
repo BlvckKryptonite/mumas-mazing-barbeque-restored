@@ -2,6 +2,16 @@
 
 Muma's 'Mazing Barbeque is a comic book-inspired, animated landing page built as a React single-page application for a fictional BBQ event. The project showcases modern frontend development with rich animations, Stripe payment integration, and a responsive design optimized for entertainment and user engagement. It serves as both a marketing site and ticket booking platform for a themed BBQ event.
 
+<<<<<<< HEAD
+## Recent Changes
+- **September 26, 2025**: Resolved merge conflicts and fixed Netlify build issues
+  - Added `terser` dependency to fix Netlify production build minification error
+  - Configured Vite for Replit environment (host 0.0.0.0, port 5000)
+  - Resolved merge conflicts in package.json, vite.config.js, index.html, netlify.toml, and replit.md
+  - Project is now fully functional in Replit with working build process
+
+=======
+>>>>>>> 4f72be58eead862b21e683ea988cac433ab2c384
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -62,6 +72,10 @@ Supports multiple deployment targets with environment-specific configurations:
 - **Vite** - Modern build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework with PostCSS and Autoprefixer
 - **React Router DOM** - Client-side routing solution
+<<<<<<< HEAD
+- **Terser** - JavaScript minification tool for production builds (added to fix Netlify deployment)
+=======
+>>>>>>> 4f72be58eead862b21e683ea988cac433ab2c384
 
 ## Deployment Services
 - **Netlify** - Primary deployment platform with serverless function support
@@ -72,4 +86,8 @@ Supports multiple deployment targets with environment-specific configurations:
 - **Express.js and CORS** - Backend server capabilities for local development and alternative deployment
 - **Node.js environment** - Requires Node.js runtime for build processes and optional server deployment
 
+<<<<<<< HEAD
 The application is designed to work in multiple deployment scenarios, from static hosting to full-stack serverless deployment, with Stripe integration as the primary external service dependency.
+=======
+The application is designed to work in multiple deployment scenarios, from static hosting to full-stack serverless deployment, with Stripe integration as the primary external service dependency.
+>>>>>>> 4f72be58eead862b21e683ea988cac433ab2c384

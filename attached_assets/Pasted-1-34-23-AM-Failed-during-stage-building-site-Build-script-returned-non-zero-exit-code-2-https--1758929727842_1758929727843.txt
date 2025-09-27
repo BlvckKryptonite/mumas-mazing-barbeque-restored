@@ -1,0 +1,96 @@
+1:34:23 AM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+1:34:20 AM: Netlify Build                                                 
+1:34:20 AM: ────────────────────────────────────────────────────────────────
+1:34:20 AM: ​
+1:34:20 AM: ❯ Version
+1:34:20 AM:   @netlify/build 35.1.8
+1:34:20 AM: ​
+1:34:20 AM: ❯ Flags
+1:34:20 AM:   accountId: 68be99c2f9ec035eca727fa0
+1:34:20 AM:   baseRelDir: true
+1:34:20 AM:   buildId: 68d722eb1814c86428a2132e
+1:34:20 AM:   deployId: 68d722eb1814c86428a21330
+1:34:20 AM: ​
+1:34:20 AM: ❯ Current directory
+1:34:20 AM:   /opt/build/repo
+1:34:20 AM: ​
+1:34:20 AM: ❯ Config file
+1:34:20 AM:   /opt/build/repo/netlify.toml
+1:34:20 AM: ​
+1:34:20 AM: ❯ Context
+1:34:20 AM:   production
+1:34:20 AM: ​
+1:34:20 AM: build.command from netlify.toml                               
+1:34:20 AM: ────────────────────────────────────────────────────────────────
+1:34:20 AM: ​
+1:34:20 AM: $ npm run build
+1:34:20 AM: > mumas-mazing-barbeque@1.0.0 build
+1:34:20 AM: > vite build
+1:34:20 AM: vite v5.4.19 building for production...
+1:34:20 AM: transforming...
+1:34:22 AM: ✓ 471 modules transformed.
+1:34:22 AM: x Build failed in 2.20s
+1:34:22 AM: error during build:
+1:34:22 AM: [vite:terser] terser not found. Since Vite v3, terser has become an optional dependency. You need to install it.
+1:34:22 AM:     at loadTerserPath (file:///opt/build/repo/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:19705:13)
+1:34:22 AM:     at Object.renderChunk (file:///opt/build/repo/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:19740:27)
+1:34:22 AM:     at file:///opt/build/repo/node_modules/rollup/dist/es/shared/node-entry.js:22288:40
+1:34:22 AM:     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+1:34:22 AM: ​
+1:34:22 AM: "build.command" failed                                        
+1:34:22 AM: ────────────────────────────────────────────────────────────────
+1:34:22 AM: ​
+1:34:22 AM:   Error message
+1:34:22 AM:   Command failed with exit code 1: npm run build (https://ntl.fyi/exit-code-1)
+1:34:22 AM: ​
+1:34:22 AM:   Error location
+1:34:22 AM:   In build.command from netlify.toml:
+1:34:22 AM:   npm run build
+1:34:22 AM: ​
+1:34:22 AM:   Resolved config
+1:34:22 AM:   build:
+1:34:22 AM:     command: npm run build
+1:34:22 AM:     commandOrigin: config
+1:34:22 AM:     environment:
+1:34:22 AM:       - NODE_VERSION
+1:34:22 AM:     publish: /opt/build/repo/dist
+1:34:22 AM:     publishOrigin: config
+1:34:22 AM:   functionsDirectory: /opt/build/repo/netlify/functions
+1:34:22 AM:   headers:
+1:34:23 AM:     - for: /*
+      values:
+        Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline'
+          'unsafe-eval' https://js.stripe.com; style-src 'self' 'unsafe-inline';
+          img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'
+          https://api.stripe.com https://*.stripe.com;"
+        Referrer-Policy: strict-origin-when-cross-origin
+        X-Content-Type-Options: nosniff
+        X-Frame-Options: DENY
+        X-XSS-Protection: 1; mode=block
+    - for: /assets/*
+      values:
+        Cache-Control: public, max-age=31536000, immutable
+    - for: /*.html
+      values:
+        Cache-Control: no-cache
+    - for: /sw.js
+      values:
+        Cache-Control: no-cache
+  headersOrigin: config
+  redirects:
+    - from: /api/create-checkout-session
+      status: 200
+      to: /.netlify/functions/create-checkout-session
+    - from: /api/checkout-session/:session_id
+      status: 200
+      to: /.netlify/functions/checkout-session/:session_id
+    - from: /api/health
+      status: 200
+      to: /.netlify/functions/health
+    - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+1:34:23 AM: Build failed due to a user error: Build script returned non-zero exit code: 2
+1:34:23 AM: Failing build: Failed to build site
+1:34:23 AM: Finished processing build request in 16.101s
