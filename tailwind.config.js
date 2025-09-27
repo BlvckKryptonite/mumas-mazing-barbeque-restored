@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'heading': ['Bangers', 'cursive'],
-        'body': ['Poppins', 'sans-serif'],
+        'heading': ['Bangers', 'Marvel', 'League Spartan', 'cursive'],
+        'body': ['Poppins', 'League Spartan', 'sans-serif'],
       },
       animation: {
         'flame': 'flame 2s ease-in-out infinite alternate',

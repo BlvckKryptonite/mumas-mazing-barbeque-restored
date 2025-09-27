@@ -20,9 +20,9 @@
   animation: glow 1.7s infinite ease-in-out;
 }
 
-/* Ensure Bangers font displays correctly - SIMPLIFIED */
+/* Ensure Bangers font displays correctly with fallbacks */
 .font-heading {
-  font-family: 'Bangers', 'Marvel', 'League Spartan', 'Poppins';
+  font-family: 'Bangers', 'Marvel', 'League Spartan', cursive !important;
   font-weight: 400 !important;
   letter-spacing: 0.1em;
   text-transform: uppercase;
