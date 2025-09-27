@@ -59,8 +59,4 @@
 [[headers]]
   for = "/sw.js"
   [headers.values]
-<<<<<<< HEAD
     Cache-Control = "no-cache"
-=======
-    Cache-Control = "no-cache"
->>>>>>> 4f72be58eead862b21e683ea988cac433ab2c384
