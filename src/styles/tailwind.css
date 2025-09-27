@@ -22,7 +22,7 @@
 
 /* Ensure Bangers font displays correctly - SIMPLIFIED */
 .font-heading {
-  font-family: 'Bangers', cursive !important;
+  font-family: "Bangers", "Marvel", "League Spartan", sans-serif;
   font-weight: 400 !important;
   letter-spacing: 0.1em;
   text-transform: uppercase;
