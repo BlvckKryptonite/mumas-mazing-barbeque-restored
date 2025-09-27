@@ -20,15 +20,6 @@
   animation: glow 1.7s infinite ease-in-out;
 }
 
-/* Ensure Bangers font displays correctly - SIMPLIFIED */
-.font-heading {
-  font-family: "Bangers", "Marvel", "League Spartan", sans-serif;
-  font-weight: 400 !important;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  line-height: 0.9;
-}
-
 /* Final white-bar protection */
 * {
   box-sizing: border-box;
@@ -42,7 +33,6 @@ body, #root {
   width: 100vw;
   background-color: #000;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
 }
 
 /* Optimized Chef Card Glow - Faster & Lighter */
@@ -99,5 +89,5 @@ body, #root {
 }
 
 .hover\:head-chef-glow-hover:hover {
-  animation: fastHeadChefGlow 1.5s ease-in-out infinite;
+  animation: fastHeadChefGlow 1.5s ease-in-out infinite;;
 }
