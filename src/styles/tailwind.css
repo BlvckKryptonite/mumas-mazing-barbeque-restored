@@ -20,6 +20,24 @@
   animation: glow 1.7s infinite ease-in-out;
 }
 
+/* Font Loading Optimization */
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bangers/v24/FeVQS0BTqb0h60ACL5lWJA.woff2) format('woff2');
+}
+
+/* Ensure Bangers font displays correctly */
+.font-heading {
+  font-family: 'Bangers', cursive !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
 /* Final white-bar protection */
 * {
   box-sizing: border-box;
@@ -33,6 +51,7 @@ body, #root {
   width: 100vw;
   background-color: #000;
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Optimized Chef Card Glow - Faster & Lighter */
@@ -89,5 +108,5 @@ body, #root {
 }
 
 .hover\:head-chef-glow-hover:hover {
-  animation: fastHeadChefGlow 1.5s ease-in-out infinite;;
+  animation: fastHeadChefGlow 1.5s ease-in-out infinite;
 }
