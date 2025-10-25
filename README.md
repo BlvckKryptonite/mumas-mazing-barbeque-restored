@@ -6,9 +6,12 @@ Welcome to **Muma’s ‘Mazing Barbeque** — a comic book-inspired, over-the-t
 
 ## 📸 Live Preview
 
-> Deployed with [Vite](https://vitejs.dev/) + React with the original version hosted via [GitHub Pages](https://blvckkryptonite.github.io/mumas-mazing-barbeque/).
+> The original version was deployed on [Vite](https://vitejs.dev/) + React with hosted via [GitHub Pages](https://blvckkryptonite.github.io/mumas-mazing-barbeque/).
 
- - **July 2025 Update:** Enhanced full stack version is [live here](https://mumas-mazing-barbeque.replit.app/).
+ - **July 2025 Update:** Enhanced full stack version is [live here](https://mumas-mazing-barbeque.netlify.app/).
+   
+- **NOTE**: This is a restored version, the original repo files were unfortunately lost while trying to resolve a merge conflict and refactor some files using Replit 🤦🏽‍♂️
+    - You can view [the original repo here](https://github.com/BlvckKryptonite/mumas-mazing-barbeque).
 
 ---
 
